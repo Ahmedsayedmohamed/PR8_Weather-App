@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=====================/ site info /=====================-->
+    <title>Weather</title>
+    <link rel="icon" href="assets/Images/favicon.png" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=====================/ Font Awesome Library /=====================-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--=====================/ Bootstrap CSS links /=====================-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--=====================/ Main Template CSS File /=====================-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- =====================/ Start Navbar /===================== -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html"><img src="./assets/Images/logo.png" alt="" /></a>
+        <form id="form" class="d-flex position-relative navFormBefore navFormAfter">
+          <input
+            id="searchInput"
+            class="rounded-pill"
+            type="text"
+            placeholder="Search..."
+          />
+          <!-- <div class="popover text-dark position-relative me-3 p-2 d-flex align-items-center">click here to search</div> -->
+          <div class="searchIcon">
+            <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <!-- =====================/ Start landing /===================== -->
+    <header
+      id="landing"
+      class="min-vh-100 d-flex align-items-center justify-content-center rounded-bottom-5 shadow-lg"
+    >
+      <span id="loading" class="loader d-none"></span>
+      <!-- here code of current temp -->
+    </header>
+    <!-- =====================/ Start Body Section /===================== -->
+    <main>
+      <!-- =====================/ Start Hourly Section /===================== -->
+      <section id="hourlySection" class="pt-5 text-center">
+        <div class="hourlyContent container">
+          <div class="title text-start mb-3">
+            <i class="fa-regular fa-clock pe-2"></i>
+            <span class="fw-500 letter-space"> Hourly Forecast</span>
+          </div>
+          <div id="forecastHourlyBox" class="row flex-nowrap overflow-auto">
+            <!-- here hourly forecasting temp code-->
+          </div>
+        </div>
+      </section>
+      <!-- =====================/ Start Daily Section /===================== -->
+      <section id="dailySection" class="py-5 text-center">
+        <div class="dailyContent container">
+          <div class="title text-start mb-3">
+            <i class="fa-solid fa-calendar-days pe-2"></i>
+            <span class="fw-500 letter-space"> 7-day Forecast</span>
+          </div>
+          <div id="forecastDailyBox" class="row flex-nowrap overflow-auto">
+            <!-- here daily forecasting temp code-->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- =====================/ Start Footer /===================== -->
+    <footer class="py-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between g-5">
+          <div class="col-md-8">
+            <form
+              class="rounded-pill overflow-hidden py-2 d-flex justify-content-between"
+            >
+              <input
+                type="text"
+                placeholder="Enter your email to subscribe..."
+                class="w-75 ms-4 ps-2"
+              />
+              <input
+                type="submit"
+                class="btn btn-info rounded-pill me-2 text-white"
+                value="Subscribe"
+              />
+            </form>
+          </div>
+          <div class="col-4 col-lg-3">
+            <ul class="list-unstyled d-flex justify-content-between mb-0 gap-1">
+              <li><i class="fa-brands fa-facebook-f"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-google-plus-g"></i></li>
+              <li><i class="fa-brands fa-pinterest"></i></li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <p class="ps-3">
+              Copyright 2014 Company name. Designed by Themezy. All rights
+              reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--=====================/ Bootstrap js link /===================== -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--=====================/ Font Awesome js link /===================== -->
+    <!-- <script src="js/all.min.js"></script> -->
+    <!--=====================/ Main js link /===================== -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
