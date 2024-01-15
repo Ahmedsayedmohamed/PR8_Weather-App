@@ -11,6 +11,7 @@ const forecastDailyBox = document.getElementById("forecastDailyBox");
 const loading = document.getElementById("loading");
 const form = document.getElementById("form");
 
+// vars for date formate  //
 let fullDate = "";
 let timeString = "";
 let dateString = "";
@@ -20,16 +21,14 @@ const formatter = new Intl.DateTimeFormat("en-US", {
   hour: "2-digit",
   minute: "2-digit",
 });
+
 const formatterHour = new Intl.DateTimeFormat("en-US", { hour: "2-digit" });
 const formatterDaily = new Intl.DateTimeFormat("en-US", { day: "2-digit" });
 
 let allData = [];
 let allForecasting = [];
-
 // !=================> When start  <=================  //
-
 getCurrentData("cairo");
-
 // !=================> Events  <=================  //
 
 // event animation of search bar & icon search
